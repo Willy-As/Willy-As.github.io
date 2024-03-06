@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+  <title>Happy Birth Day</title>
+
+</head>
+
+<body class="body">
+  <div class="open">
+    <div class="card">
+      <h2>Ada pesan buat kamu😊</h2>
+      <img onclick="mulai()" src="https://dekatutorial.github.io/spesial_mail.png" alt="" srcset="" />
+      <h3>Tekan untuk membuka</h3>
+    </div>
+  </div>
+  <div class="atas" id="atas">
+    <img onclick="mulai()" src="https://dekatutorial.github.io/spesial_stikerUltah.png" alt="" />
+    <h2>Scroll kebawah ya</h2>
+  </div>
+
+  <p data-aos="zoom-in">Assalamu'alaikum Warahmatullahi Wabarakatuh Sayangku</p>
+  <p data-aos="zoom-in">Ciyeeeee</p>
+  <p data-aos="zoom-in">Yang hari ini ulang tahun</p>
+  <p data-aos="zoom-in">بَارَكَ اللَّهُ فِي عُمْرِك</p>
+  <p data-aos="zoom-in">Terima kasih atas semua kenangan indah yang telah kita lalui bersama</p>
+  <p data-aos="zoom-in">Kamu adalah orang yang luar biasa dan aku bersyukur memilikimu dalam hidupku</p>
+  <p data-aos="zoom-in">Semoga di hari spesial ini, semua mimpimu menjadi kenyataan.</p>
+  <p data-aos="zoom-in">Selamat ulang tahun!</p>
+  <p data-aos="zoom-in">Semoga Allah memberkahi usiamu</p>
+  <p data-aos="zoom-in">memanjangkan umurmu dalam ketaatan</p>
+  <p data-aos="zoom-in">menyingkirkan kesulitanmu</p>
+  <p data-aos="zoom-in">membedah kebimbanganmu</p>
+  <p data-aos="zoom-in">Semua yang diimpikan tercapai</p>
+  <p data-aos="zoom-in">Harus lebih baik dari tahun lalu</p>
+  <p data-aos="zoom-in">Menjadi anak yang Sholehah berbakti kepada orang tua</p>
+  <p data-aos="zoom-in">dan semoga Allah memberkahi amalmu dan apa yang ada padamu, serta memudahkam urusanmu</p>
+
+  <p data-aos="zoom-in">Coba kamu pencet love nya
+    <i onclick="tanya()" class="material-icons-sharp"> favorite </i>
+  </p>
+
+  <script>
+
+    var musik = "";
+
+  </script>
+  <script> AOS.init({once: true, });</script>
+  <script> if (musik == "") {musik = "https://dekatutorial.github.io/Selamat%20Ulang%20Tahun%20[Jamrud].mp3";} var audio = new Audio(musik); audio.loop = true; audio.autoplay = true; function mulai() {audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () {document.querySelector(".open").style.display = "none";}, 1000);} function wa(isi) {window.open("https://api.whatsapp.com/send/?phone=6282285856302&text=I+Love+You&type=phone_number&app_absent=0 = " + isi);} async function tanya() {var {value: kado} = await swal.fire({title: "Di hari spesial ini kamu pengin nya apa?", input: "text", showCancelButton: false, }); if (kado) {await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado);} else {await swal.fire("Jangan dikosongin dong"); tanya();} }</script>
+  <!-- <p class=""><span><a href=""></a></span></p> -->
+</body>
+
+</html>
